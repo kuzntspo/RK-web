@@ -1,0 +1,164 @@
+body {
+    font-family: "Dancing Script", sans-serif;
+  
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ========================== Header ==========================*/
+  
+  .wrapper {
+    padding: 0 40px;
+  }
+  
+  .header {
+    background-color: rgb(237, 216, 200);
+  }
+  
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 26px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu__item {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .menu__item::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+    margin: 0 20px;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+  }
+  
+  .menu__item:hover::before {
+    width: 100%;
+    background-color: rgb(205, 141, 85);
+  }
+  
+  .menu__item a:hover {
+    color: rgb(205, 141, 85);
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(127, 111, 111);
+  }
+  
+  /* ========================== Main ==========================*/
+  
+  main {
+    background-image: url(1.webp);
+    padding: 20px 40px;
+  }
+  
+  .preview__wrapper {
+    padding: 20px 0;
+    display: flex; 
+  }
+  
+  .preview__text {
+    line-height: 2;
+    margin-top: 40px;
+  }
+  
+  .preview__image {
+    width: 50%;
+  }
+  
+  .preview-info {
+    width: 50%;
+  }
+   /* ========================== Gallery ==========================*/
+   .gallery__title {
+    position: relative;
+    color: rgb(162, 134, 108);
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+  
+  .gallery__title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 150px;
+    height: 3px;
+    background-color: rgb(162, 134, 108);
+  }
+  
+  .gallery-images__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery__item {
+    text-align: center;
+    width: 31%;
+    height: 300px;
+    margin: 10px;
+  }
+  
+  .gallery__image {
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+  }
+  
+  .gallery__item img:hover {
+    width: 420px;
+    height: 270px;
+  }
+  
+  /* ========================== Gallery ==========================*/
+  .footer {
+    background-color: rgb(24, 24, 24);
+    color: rgb(204, 204, 204);
+    padding: 30px;
+    font-weight: 300;
+  }
+  
+  .footer ul {
+    list-style: none;
+  }
+  
+  .footer-info__item {
+    margin: 10px 0;
+  }
+  
+  .footer-info__item a {
+    color: rgb(204, 204, 204);
+  }
+  
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

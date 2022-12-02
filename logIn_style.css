@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: "Dancing Script", sans-serif;
+    overflow: hidden;
+    background-color: rgba(122, 99, 83, 0.927);
+}
+
+
+.container {
+    margin: 0px;   
+}
+.wrapper {
+    padding: 0 40px;
+  }
+  
+  .header {
+    background-color: rgb(237, 216, 200);
+  }
+  
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 26px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu__item {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .menu__item::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+    margin: 0 20px;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+  }
+  
+  .menu__item:hover::before {
+    width: 100%;
+    background-color: rgb(205, 141, 85);
+  }
+  
+  .menu__item a:hover {
+    color: rgb(205, 141, 85);
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(127, 111, 111);
+  }
+.background-login {
+    padding-top: 10px;
+    margin: 0;
+    background-image: url(1.webp);
+    height: 88vh;
+    background-repeat: round;
+    background-size: 30%;
+    margin-bottom: -40px;
+}
+
+.container-login-form {
+    color: rgba(251, 251, 251, 0.927);
+    margin: 30%;
+    margin-top: 100px;
+    background-color: rgb(123, 103, 89, 0.927);
+    background-size: cover;
+    width: 40%;
+    position: center;
+    text-align: center;
+}
+
+.elements-login {
+    color: rgba(251, 251, 251, 0.92);
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+.send-button {
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(24, 24, 24);
+    color: rgb(204, 204, 204);
+    padding: 30px;
+    font-weight: 300;
+  }
+  
+  .footer ul {
+    list-style: none;
+  }
+  
+  .footer-info__item {
+    margin: 10px 0;
+  }
+  
+  .footer-info__item a {
+    color: rgb(204, 204, 204);
+  }
+  
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
